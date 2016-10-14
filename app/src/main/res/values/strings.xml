@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">TugasACS</string>
+    <string name="nasi_goreng">Nasi Goreng</string>
+    <string name="mie_goreng">Mie Goreng</string>
+    <string name="kwetiaw">Kwetiaw</string>
+    <string name="mie_rebus">Mie Rebus</string>
+    <string name="total">Total :</string>
+    <string name="bayar">Bayar!</string>
+    <string name="rp_12_000">Rp 12.000,-</string>
+    <string name="rp_10_000">Rp 10.000,-</string>
+    <string name="rp_11_000">Rp 11.000,-</string>
+    <string name="rp_14_000">Rp 14.000,-</string>
+    <string-array name="Jumlah">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+</resources>

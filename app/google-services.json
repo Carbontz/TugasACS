@@ -1,0 +1,38 @@
+{
+  "project_info": {
+    "project_number": "17350640183",
+    "firebase_url": "https://tugasacs.firebaseio.com",
+    "project_id": "tugasacs",
+    "storage_bucket": "tugasacs.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:17350640183:android:f645c3cd8c1e073d",
+        "android_client_info": {
+          "package_name": "reza.tugasacs"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "17350640183-ose3t0gab77jnsfh5viqnhk47ilf1gfb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
