@@ -10,6 +10,15 @@ public class Data {
     public String menu;
     public int jumlah;
     public int harga;
+    public int totalHarga;
+
+    public int getTotalHarga() {
+        return totalHarga;
+    }
+
+    public void setTotalHarga(int totalHarga) {
+        this.totalHarga = totalHarga;
+    }
 
     public Data() {
     }
