@@ -15,6 +15,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+
         Button btnBayar = (Button) findViewById(R.id.btnBayar);
         EditText editText = (EditText) findViewById(R.id.editText);
         ScrollView scrollView = (ScrollView) findViewById(R.id.scrollView);
