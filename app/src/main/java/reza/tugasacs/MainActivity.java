@@ -8,18 +8,31 @@ import android.widget.EditText;
 import android.widget.ScrollView;
 import android.widget.TextView;
 
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
 public class MainActivity extends AppCompatActivity {
+
+    Button btnBayar;
+    EditText editText;
+    ScrollView scrollView;
+    TextView tvPembayaran;
+    Data data;
+
+    //firebase
+    FirebaseDatabase database = FirebaseDatabase.getInstance();
+    DatabaseReference myRef = database.getReference("Pesan");
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Button btnBayar = (Button) findViewById(R.id.btnBayar);
-        EditText editText = (EditText) findViewById(R.id.editText);
-        ScrollView scrollView = (ScrollView) findViewById(R.id.scrollView);
-        TextView tvPembayaran = (TextView) findViewById(R.id.tvPembayaran);
-        Data data = new Data();
+        btnBayar = (Button) findViewById(R.id.btnBayar);
+        editText = (EditText) findViewById(R.id.editText);
+        scrollView = (ScrollView) findViewById(R.id.scrollView);
+        tvPembayaran = (TextView) findViewById(R.id.tvPembayaran);
+        data = new Data();
 
         btnBayar.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -28,4 +41,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
+
+
 }
