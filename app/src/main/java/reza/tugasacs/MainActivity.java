@@ -13,7 +13,7 @@ import com.google.firebase.database.FirebaseDatabase;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button btnBayar;
+    private Button btnBayar;
     EditText editText;
     ScrollView scrollView;
     TextView tvPembayaran;
