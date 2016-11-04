@@ -4,70 +4,59 @@ package reza.tugasacs;
  * Created by Reza on 13/10/2016.
  */
 public class Data {
-    public String nama;
-    public String tanggal;
-    public String jam;
-    public String menu;
-    public int jumlah;
-    public int harga;
-    public int totalHarga;
+    protected int jumlahNG;
+    protected int jumlahMG;
+    protected int jumlahMR;
+    protected int jumlahK;
+    protected long totalBayar;
+    protected long hargaNG = 12000;
+    protected long hargaMG = 10000;
+    protected long hargaMR = 11000;
+    protected long hargaK = 14000;
 
-    public int getTotalHarga() {
-        return totalHarga;
+    public int getJumlahNG() {
+        return jumlahNG;
     }
 
-    public void setTotalHarga(int totalHarga) {
-        this.totalHarga = totalHarga;
+    public void setJumlahNG(int jumlahNG) {
+        this.jumlahNG = jumlahNG;
     }
 
-    public Data() {
+    public int getJumlahMG() {
+        return jumlahMG;
     }
 
-    public String getNama() {
-        return nama;
+    public void setJumlahMG(int jumlahMG) {
+        this.jumlahMG = jumlahMG;
     }
 
-    public void setNama(String nama) {
-        this.nama = nama;
+    public int getJumlahMR() {
+        return jumlahMR;
     }
 
-    public String getTanggal() {
-        return tanggal;
+    public void setJumlahMR(int jumlahMR) {
+        this.jumlahMR = jumlahMR;
     }
 
-    public void setTanggal(String tanggal) {
-        this.tanggal = tanggal;
+    public int getJumlahK() {
+        return jumlahK;
     }
 
-    public String getJam() {
-        return jam;
+    public void setJumlahK(int jumlahK) {
+        this.jumlahK = jumlahK;
     }
 
-    public void setJam(String jam) {
-        this.jam = jam;
+    public long getTotalBayar() {
+        return totalBayar;
     }
 
-    public String getMenu() {
-        return menu;
+    public void setTotalBayar() {
+        this.totalBayar = ((jumlahNG*hargaNG)+(jumlahMG*hargaMG)+(jumlahMR*hargaMR)+(jumlahK*hargaK));
     }
 
-    public void setMenu(String menu) {
-        this.menu = menu;
-    }
-
-    public int getJumlah() {
-        return jumlah;
-    }
-
-    public void setJumlah(int jumlah) {
-        this.jumlah = jumlah;
-    }
-
-    public int getHarga() {
-        return harga;
-    }
-
-    public void setHarga(int harga) {
-        this.harga = harga;
+    public String getTeksTotalBayar() {
+        String teks;
+        teks = String.valueOf(this.totalBayar);
+        return teks;
     }
 }
